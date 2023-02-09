@@ -12,7 +12,7 @@ processors:
         value: "<account>"
       - key: appdynamics.controller.host
         action: upsert
-        value: "<controller host>"
+        value: "<controler host>"
       - key: appdynamics.controller.port
         action: upsert
         value: 443
@@ -24,8 +24,8 @@ exporters:
     loglevel: debug
 
   otlphttp:
-    endpoint: "ENDPOINT"
-    headers: {"x-api-key": "KEY"}
+    endpoint: "https://xxxx"    
+    headers: {"x-api-key": "<your key>"}
 
 extensions:
   health_check:
